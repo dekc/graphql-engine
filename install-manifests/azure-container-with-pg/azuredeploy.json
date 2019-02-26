@@ -73,7 +73,7 @@
     }
   },
   "variables": {
-    "serverName": "[concat(parameters('name'), '-pg-server')]",
+    "serverName": "[concat(parameters('name'), '-dhi')]",
     "adminUser": "[parameters('postgresAdminUsername')]",
     "adminPassword": "[parameters('postgresAdminPassword')]",
     "dbName": "[parameters('postgresDatabaseName')]",
