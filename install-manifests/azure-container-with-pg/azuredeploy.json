@@ -14,22 +14,14 @@
     "postgresVersion": {
       "type": "string",
       "defaultValue": "10",
-      "allowedValues": [
-        "10",
-        "9.6",
-        "9.5"
-      ],
+      "allowedValues": ["10", "9.6", "9.5"],
       "metadata": {
         "description": "Version of PostgreSQL Server to be provisioned."
       }
     },
     "postgresPricingTier": {
       "type": "string",
-      "allowedValues": [
-        "Basic",
-        "GeneralPurpose",
-        "MemoryOptimized"
-      ],
+      "allowedValues": ["Basic", "GeneralPurpose", "MemoryOptimized"],
       "defaultValue": "GeneralPurpose",
       "metadata": {
         "description": "Azure database for PostgreSQL pricing tier."
@@ -37,13 +29,7 @@
     },
     "postgresCPUCores": {
       "type": "int",
-      "allowedValues": [
-        2,
-        4,
-        8,
-        16,
-        32
-      ],
+      "allowedValues": [1, 2, 4, 8, 16, 32],
       "defaultValue": 2,
       "metadata": {
         "description": "Azure database for PostgreSQL SKU capacity - number of cores."
@@ -145,7 +131,6 @@
           "dependsOn": [
             "[resourceId('Microsoft.DBforPostgreSQL/servers', variables('serverName'))]"
           ]
-
         }
       ]
     },

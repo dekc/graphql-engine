@@ -8,10 +8,10 @@ Instances](https://azure.microsoft.com/en-us/services/container-instances/)
 backed by an [Azure Database for
 PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/) Server.
 For a more detailed step-by-step guide on deplopying individual
-resources to Azure using the CLI, refer to the 
+resources to Azure using the CLI, refer to the
 [documentation](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/azure-container-instances-postgres.html).
 
-[![Deploy to Azure Button](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fhasura%2fgraphql-engine%2fmaster%2finstall-manifests%2fazure-container-with-pg%2fazuredeploy.json)
+[![Deploy to Azure Button](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdekc%2Fgraphql-engine%2Fmaster%2Finstall-manifests%2Fazure-container-with-pg%2Fazuredeploy.json)
 
 (The button opens Azure Portal, you might want to do a <kbd>Ctrl+Click</kbd>, to get it on a new tab)
 
@@ -19,7 +19,7 @@ resources to Azure using the CLI, refer to the
 
 - A valid Azure Subscription ([click
   here](https://azure.microsoft.com/en-us/free/) for a free trial).
-  
+
 ## Instructions
 
 Once you click the button, it will take you to the Azure Portal, where you might be
