@@ -46,7 +46,7 @@
     },
     "postgresAdminUsername": {
       "type": "string",
-      "defaultValue": "hasura",
+      "defaultValue": "dhiadmin",
       "minLength": 4,
       "maxLength": 128,
       "metadata": {
@@ -64,7 +64,7 @@
     },
     "postgresDatabaseName": {
       "type": "string",
-      "defaultValue": "hasura",
+      "defaultValue": "dhidb",
       "minLength": 4,
       "maxLength": 128,
       "metadata": {
