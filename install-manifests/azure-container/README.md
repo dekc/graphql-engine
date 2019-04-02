@@ -8,10 +8,10 @@ Instances](https://azure.microsoft.com/en-us/services/container-instances/)
 backed by an existing Postgres server (e.g. [Azure Database for
 PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/)).
 For a more detailed step-by-step guide on deplopying individual
-resources to Azure using the CLI, refer to the 
+resources to Azure using the CLI, refer to the
 [documentation](https://docs.hasura.io/1.0/graphql/manual/guides/deployment/azure-container-instances-postgres.html).
 
-[![Deploy to Azure Button](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fhasura%2fgraphql-engine%2fmaster%2finstall-manifests%2fazure-container%2fazuredeploy.json)
+[![Deploy to Azure Button](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fdekc%2fgraphql-engine%2fmaster%2finstall-manifests%2fazure-container%2fazuredeploy.json)
 
 (The button opens Azure Portal, you might want to do a <kbd>Ctrl+Click</kbd>, to get it on a new tab)
 
@@ -20,7 +20,7 @@ resources to Azure using the CLI, refer to the
 - A valid Azure Subscription ([click
   here](https://azure.microsoft.com/en-us/free/) for a free trial).
 - An existing PostgreSQL database.
-  
+
 ## Instructions
 
 Once you click the button, it will take you to the Azure Portal, where you might be
@@ -43,7 +43,6 @@ the screenshot that follows:
 - **Postgres Username (Server Admin Login Name)**: enter the login name for Postgres server, typically of the form hasura@pg-server for Azure.
 - **Postgres Password**: enter the password for Postgres user.
 - **Postgres Database Name**: enter the name of database that Hasura should connect to.
-
 
 _(Note: Make sure you’ve allowed access for Azure services to the Postgres Server. This setting can be found under the connection security tab on Azure Portal.)_
 
@@ -80,7 +79,6 @@ http://hasura-graphql-engine.centralindia.azurecontainer.io
 Once you open the console, switch to Data tab and you’ll be able to see the tables in the database. You might have to switch the schema (dropdown on the top of sidebar) if your tables are not in the default public schema.
 
 ![Console Track Table](https://storage.googleapis.com/graphql-engine-cdn.hasura.io/main-repo/img/console_track_tables.png)
-
 
 ## Next steps
 
