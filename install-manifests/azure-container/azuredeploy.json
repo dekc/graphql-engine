@@ -45,6 +45,13 @@
       "metadata": {
         "description": "Name of the database to connect."
       }
+    },
+    "hasuraSecret": {
+      "type": "string",
+      "defaultValue": null,
+      "metadata": {
+        "description": "Admin secret key, required to access this instance. This is mandatory when you use webhook or JWT."
+      }
     }
   },
   "variables": {
@@ -53,6 +60,7 @@
     "pgUser": "[parameters('postgresUsername (ServerAdminLoginName)')]",
     "pgPassword": "[parameters('postgresPassword')]",
     "dbName": "[parameters('postgresDatabaseName')]",
+    "hasSecret": "[paramters('hasuraSecret')]",
     "containerGroupName": "[concat(parameters('name'), '-container-group')]",
     "containerName": "hasura-graphql-engine",
     "containerImage": "hasura/graphql-engine:v1.0.0-alpha41"
@@ -94,7 +102,7 @@
               ],
               "environmentVariables": [
                 {
-                  "HASURA_GRAPHQL_ADMIN_SECRET": "hasuraSecret"
+                  "HASURA_GRAPHQL_ADMIN_SECRET": "[variables('hasSecret')]"
                 }
               ],
               "resources": {
