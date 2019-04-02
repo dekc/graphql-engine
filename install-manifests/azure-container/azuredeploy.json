@@ -102,7 +102,8 @@
               ],
               "environmentVariables": [
                 {
-                  "HASURA_GRAPHQL_ADMIN_SECRET": "[variables('hasSecret')]"
+                  "name": "HASURA_GRAPHQL_ADMIN_SECRET",
+                  "secureValue": "[variables('hasSecret')]"
                 }
               ],
               "resources": {
