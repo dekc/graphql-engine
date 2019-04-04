@@ -104,6 +104,18 @@
                 {
                   "name": "HASURA_GRAPHQL_ADMIN_SECRET",
                   "secureValue": "[variables('hasSecret')]"
+                },
+                {
+                  "name": "HASURA_GRAPHQL_UNAUTHORIZED_ROLE",
+                  "value": "anonymous"
+                },
+                {
+                  "name": "HASURA_GRAPHQL_AUTH_HOOK",
+                  "value": "https://greenships.azurewebsites.net/api/ValidationWebhook"
+                },
+                {
+                  "name": "HASURA_GRAPHQL_AUTH_HOOK_MODE",
+                  "value": "POST"
                 }
               ],
               "resources": {
