@@ -106,10 +106,6 @@
                   "secureValue": "[variables('hasSecret')]"
                 },
                 {
-                  "name": "HASURA_GRAPHQL_UNAUTHORIZED_ROLE",
-                  "value": "anonymous"
-                },
-                {
                   "name": "HASURA_GRAPHQL_AUTH_HOOK",
                   "value": "https://greenships.azurewebsites.net/api/ValidationWebhook"
                 },
