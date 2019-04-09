@@ -13,7 +13,7 @@
     },
     "postgresHost (ServerName)": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "vesselcheck-dhi.postgres.database.azure.com",
       "metadata": {
         "description": "Server name (hostname) for the Postgres server. Typically like pg-server-name.postgres.database.azure.com"
       }
@@ -27,7 +27,7 @@
     },
     "postgresUsername (ServerAdminLoginName)": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "dhiadmin@vesselcheck-dhi",
       "metadata": {
         "description": "Username for Postgres. Typically like hasura@pg-server-name"
       }
@@ -41,7 +41,7 @@
     },
     "postgresDatabaseName": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "vesselcheck",
       "metadata": {
         "description": "Name of the database to connect."
       }
@@ -63,7 +63,7 @@
     "hasSecret": "[parameters('hasuraSecret')]",
     "containerGroupName": "[concat(parameters('name'), '-container-group')]",
     "containerName": "hasura-graphql-engine",
-    "containerImage": "hasura/graphql-engine:v1.0.0-alpha41"
+    "containerImage": "hasura/graphql-engine:v1.0.0-alpha42"
   },
   "resources": [
     {
